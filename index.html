@@ -478,6 +478,11 @@
 .compare-table tbody th.group{background:#25445a;color:#b1f7ff;border-bottom:1px solid #2b3b50}
 .compare-table tbody tr.category-start > th.item{color:#fff}
 @media(max-width:700px){.compare-table tbody tr.category-start:not(:first-child) > th,.compare-table tbody tr.category-start:not(:first-child) > td{border-top-width:5px}}
+
+/* 比較表の見出し・外周もカテゴリー区切りと同じ太さに統一 */
+.compare-table thead th{border-top:5px solid #48b9cc;border-bottom:5px solid #48b9cc}
+.compare-table tbody tr:last-child > th,.compare-table tbody tr:last-child > td{border-bottom:5px solid #48b9cc}
+
 </style>
 </head>
 <body>
