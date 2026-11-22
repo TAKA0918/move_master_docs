@@ -483,12 +483,36 @@
 .compare-table thead th{border-top:5px solid #48b9cc;border-bottom:5px solid #48b9cc}
 .compare-table tbody tr:last-child > th,.compare-table tbody tr:last-child > td{border-bottom:5px solid #48b9cc}
 
+
+/* Instructor video feature */
+.instructor-video{background:linear-gradient(180deg,#101c2d 0%,#0d1423 100%);border-top:1px solid rgba(0,242,254,.18);border-bottom:1px solid rgba(0,242,254,.18)}
+.instructor-video .video-shell{max-width:900px;margin:28px auto 0;padding:22px;background:#131b2e;border:1px solid #30435b;border-radius:20px}
+.instructor-video .video-frame{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#050912}
+.instructor-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.instructor-video .video-caption{font-size:.93rem;color:#c3cbd7;margin:18px 0 0}
+.instructor-video .video-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.instructor-video .video-credit{font-size:.85rem;color:#aab9cb;text-align:center;margin:18px 0 0}
+@media(max-width:700px){.instructor-video .video-shell{padding:12px}.instructor-video .video-actions .action{width:100%}}
 </style>
 </head>
 <body>
-<header><div class="container topbar"><a aria-label="MoveMaster トップ" class="logo" href="#top">MoveMaster</a><nav aria-label="メインナビゲーション" class="topnav"><a href="#youtube">YouTube比較</a><a href="#annotation">書き込み</a><a href="#pricing">料金・機能比較</a><a class="pill" href="#download">ダウンロード・テスター募集 ↓</a></nav></div></header>
+<header><div class="container topbar"><a aria-label="MoveMaster トップ" class="logo" href="#top">MoveMaster</a><nav aria-label="メインナビゲーション" class="topnav"><a href="#instructor-video">先生の紹介動画</a><a href="#youtube">YouTube比較</a><a href="#annotation">書き込み</a><a href="#pricing">料金・機能比較</a><a class="pill" href="#download">ダウンロード・テスター募集 ↓</a></nav></div></header>
 <main id="top">
 <section class="hero-new"><div class="container"><div class="eyebrow">MOVEMASTER – MOTION STUDIO</div><h1>身体知を見える化し、磨く。</h1><h2>お手本と自分を比べて、動きの違いに気づく。</h2><p>YouTubeのお手本動画や、スマホで撮影した動画を並べて比較。タイミングを合わせて再生し、スローやコマ送りでじっくり確認。気づいたポイントは、動画に直接書き込めます。</p><div class="hero-actions"><a class="action primary" href="https://apps.apple.com/jp/app/id6759160605" rel="noopener noreferrer" target="_blank">iPhone版をダウンロード ↗</a><a class="action secondary" href="#android">Androidテスター募集中 ↓</a></div><p class="micro">iPhone版正式公開中 ／ Android版テスト公開中</p></div></section>
+
+<section class="section instructor-video" id="instructor-video" aria-labelledby="instructor-video-title">
+ <div class="container">
+  <div class="eyebrow">FEATURED ON YOUTUBE</div>
+  <h2 id="instructor-video-title">バレエ講師・廣瀬健士先生がMoveMasterを紹介！</h2>
+  <p class="lead">廣瀬健士先生が、ご自身のYouTube動画でMoveMasterを取り上げてくださいました。大人バレエの練習に役立つ機能や、動画を見比べることの大切さをご紹介いただいています。</p>
+  <div class="video-shell">
+   <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/wZF8K0-Ntw8" title="廣瀬健士先生のYouTube動画：自分の踊りを見ていますか？大人バレエの上達に役立つアプリ！" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+   <p class="video-caption"><strong>「自分の踊りを見ていますか？大人バレエの上達に役立つアプリ！」</strong><br>廣瀬健士先生のYouTube動画です。ぜひ先生の元動画でもご覧ください。</p>
+   <div class="video-actions"><a class="action primary" href="https://www.youtube.com/watch?v=wZF8K0-Ntw8" target="_blank" rel="noopener noreferrer" aria-label="廣瀬健士先生の元動画をYouTubeで見る（新しいタブで開く）">▶ 廣瀬先生のYouTubeで元動画を見る ↗</a></div>
+   <p class="video-credit">元動画のページから、高評価やコメントなどで先生のチャンネルを応援していただけると嬉しいです。<br>※動画は廣瀬健士先生の許可をいただいて掲載しています。</p>
+  </div>
+ </div>
+</section>
 <section class="section" id="problems"><div class="container"><div class="eyebrow">WHY MOVEMASTER?</div><h2>練習しているのに、なぜかお手本と違う。</h2><p class="lead">振付を覚えて、何度も練習している。それなのに、自分の動画を見ると「何かが違う」と感じることはありませんか？</p><div class="issue-grid"><div class="panel issue">振付は覚えたのに、お手本と違って見える</div><div class="panel issue">音楽に対して、動くタイミングが合っているか分からない</div><div class="panel issue">自分のフォームや身体の使い方を客観的に確認したい</div><div class="panel issue">先生に教わったポイントを、次の練習まで覚えておきたい</div></div><p class="accent" style="margin-top:25px">MoveMasterは、そんな「何かが違う」を見つけるための練習ツールです。</p></div></section>
 <section class="section" id="youtube"><div class="container"><div class="eyebrow">01 — YOUTUBE COMPARISON</div><h2>YouTubeのお手本を、そのまま練習へ。</h2><p class="lead">YouTubeで見つけたお手本動画と、自分の練習動画を同じ画面に表示。上下・左右に並べて、動きやタイミングの違いを確認できます。</p><p>YouTubeアプリの「共有」からMoveMasterを選ぶだけ。動画をダウンロードする必要はありません。</p><figure class="visual"><button aria-label="YouTube比較画面を拡大" data-image="youtube_compare.png" type="button"><img alt="iPhone版MoveMasterでYouTubeのお手本と自分の練習動画を左右に並べて比較している画面" height="750" loading="lazy" src="youtube_compare.png" width="1334"/></button><figcaption>実際のMoveMaster画面（タップして拡大）</figcaption></figure><h3 style="margin:28px 0 12px">「簡単同期」で、同じ瞬間を比べる。</h3><p>お手本と自分の動画で、同じポーズやカウントの瞬間をそれぞれ「基準点」に設定。2つの動画の再生位置を揃えて比較できます。</p><p class="muted">※YouTube比較は基準点を使った簡単同期です。音声自動同期とは異なります。</p></div></section>
 <section class="section" id="compare"><div class="container"><div class="eyebrow">02 — COMPARE &amp; DISCOVER</div><h2>同じ瞬間を比べると、見えてくるものがある。</h2><p class="lead">腕を上げるタイミング、身体の向き、重心の移動。お手本と自分の動きを並べて、違いをじっくり確認できます。</p><div class="feature-grid"><div class="panel feature"><div class="emoji">🎵</div><strong>音声自動同期</strong><p>同じ音楽を使った、スマホ内の動画同士を音声で合わせて比較。</p></div><div class="panel feature"><div class="emoji">▣</div><strong>オーバーレイ比較</strong><p>スマホ内の2つの動画を重ね、姿勢や動きの違いを確認。</p></div><div class="panel feature"><div class="emoji">◷</div><strong>スロー再生</strong><p>速い動きも、速度を落としてじっくり確認。</p></div><div class="panel feature"><div class="emoji">⏭</div><strong>コマ送り</strong><p>一瞬のフォームやタイミングを細かく確認。</p></div></div><p class="accent" style="margin-top:25px">ただ見るだけでは分からなかった違いが、比較することで見えてきます。</p></div></section>
